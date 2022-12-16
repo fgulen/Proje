@@ -286,3 +286,7 @@ input, textarea {
     display: flex;
     justify-content: center;
 }
+
+input.btn {
+    width:150px;
+}
