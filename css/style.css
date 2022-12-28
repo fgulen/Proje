@@ -176,7 +176,7 @@ header.sticky{
 
 .services-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     text-align: center;
     gap: 2rem;
@@ -207,7 +207,7 @@ header.sticky{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     gap: 2rem;
     margin-top: 4rem;
@@ -233,7 +233,7 @@ header.sticky{
 
 .contact{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
     gap: 2rem;
     width: 100%;
@@ -259,6 +259,11 @@ input, textarea {
 
 .contact h2{
     font-size: var(--h2-font);
+}
+
+.portfoli-box-img{
+    width: 1.1em;
+    float: right;
 }
 
 .content-data a{
@@ -292,4 +297,20 @@ input.btn {
     justify-content: center;
     
     margin: 200px 0px;
+}
+
+
+@media (min-width:325) and (max-width: 425px){
+    
+    :root{
+        --h1-font: 4rem;
+        --h2-font: 2,5rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    .navbar a{
+        display: block;
+    }
 }
